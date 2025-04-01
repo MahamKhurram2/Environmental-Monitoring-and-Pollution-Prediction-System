@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Environmental Monitoring and Pollution Prediction System
 
 ## Project Overview
@@ -33,11 +33,8 @@ This project implements an **MLOps pipeline** to monitor environmental data (suc
 - **Real-time Monitoring**: Implemented **Grafana** and **Prometheus** dashboards.
 - **Live Data Testing**: Validated model predictions using real-time data.
 - **Optimization**: Analyzed and improved pipeline performance.
+- 
+## 📬 Author
 
-✅ **Completed**: Live monitoring, validation, and refinements.
-=======
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/h2zn46__)
-# fall24_mlops_project
-
-For Project Description, checkout the "mlops_project_description.pdf" file uploaded in the repo. 
->>>>>>> 2a08272 (Initial commit for the new repository)
+**[Maham Khurram]**  
+👨‍💻 GitHub: https://github.com/MahamKhurram2/Environmental-Monitoring-and-Pollution-Prediction-System.git
