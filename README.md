@@ -9,7 +9,6 @@ This project implements an **MLOps pipeline** to monitor environmental data (suc
 - **Pollution Trend Prediction**: Uses machine learning models (ARIMA, LSTMs) to predict air quality trends.
 - **Live Monitoring & Optimization**: Implements real-time monitoring using **Grafana** and **Prometheus**.
 
----
 ## Tasks Breakdown
 ### Task 1: Managing Environmental Data with DVC
 - **Live Data Collection**: Fetches data from APIs such as OpenWeatherMap, AirVisual (IQAir), and EPA AirNow.
