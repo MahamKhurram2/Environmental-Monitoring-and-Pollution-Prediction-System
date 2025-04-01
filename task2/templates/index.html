@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIMA Forecast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .welcome {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        form {
+            margin: 20px 0;
+        }
+        input[type="number"] {
+            padding: 10px;
+            width: calc(100% - 24px);
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .error {
+            color: red;
+            margin: 10px 0;
+        }
+        .result {
+            margin: 20px 0;
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .result p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">
+            ☁️ Welcome to the ARIMA Forecasting API ☁️
+        </div>
+        <h1>ARIMA Forecast</h1>
+        <form action="/predict" method="post">
+            <input type="number" name="steps" placeholder="Enter number of steps" required>
+            <button type="submit">Predict</button>
+        </form>
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+        {% if forecast %}
+        <div class="result">
+            <p><strong>Steps:</strong> {{ steps }}</p>
+            <p><strong>Forecast:</strong> {{ forecast }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+[core]
+    remote = gdrive_remote
+['remote "gdrive_remote"']
+    url = gdrive://12N4Q6EgP7rO38_5rHDpMVjm9BJtSkNRs
+    gdrive_use_service_account = true
+    gdrive_service_account_json_file_path = c:/Users/hp/OneDrive/Desktop/Semester 7/Mlops/project/course-project-mahamkhurram/task1/mlops-444518-6b3719cf90f2.json
